@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+button, input {
+    border: none;
+    outline: none;
+}
+
+body {
+    background-color: #F1F1F3;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    padding: 10px;
+}
+
+/* === Header === */
+
+header {
+    display: grid; /* Что это за грид? Сетка? */
+    grid-template-columns: 2fr 9fr;
+}
+
+header > img {
+    width: 30px;
+    height: auto;
+}
+
+header > nav > ul {
+    list-style-type: none;
+    display: flex; /* Что это за флекс? для расположения списков?*/
+    align-items: center;
+    justify-content: flex-end; /* выравнивание блока вправо в конец */
+    gap: 20px;
+}
+
+header > nav > ul > li > a { /* ссылка на объект внутри хедера */
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #111;
+    transition: color 0.4s ease-in-out;
+}
+
+header > nav > ul > li > a:hover { 
+    color: #E89E96;
+}
+
+/* === Main === */
+
+main {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 2px solid hsla(319, 22%, 85%, 0.5);
+    border-radius: 10px 10px 0 0;
+}
+
+main > .info {
+    flex-basis: 45%;
+}
+
+main > .info > h1 {
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+main > .info > button {
+    border-radius: 30px;
+    background-image: linear-gradient(to top, #F4D0B8, #EBAA9F);
+    padding: 10px 30px;
+    font-weight: 600;
+    margin-top: 40px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+main > .image {
+    flex-basis: 35%;
+}
+
+main > .image > img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* === Sections === */
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* max-width: 600px;  */ 
+}
+
+section > article {
+    border: 2px solid hsla(319, 22%, 85%, 0.5);
+    border-top: none;
+    border-right: none; 
+    border-radius: 0 0 10px 10px;
+    padding: 20px;
+}
+
+section > article:last-child { 
+/* не знаю что это означает? У крайнего объекта будет бордеры, у остальны — отключен справа выше*/
+border-right: 2px solid hsla(319, 22%, 85%, 0.5);
+}
+
+section > article > h2 {
+font-size: 20px;
+font-weight: 600;
+margin-bottom: 10px;
+}
+
+section > div {
+font-size: 16px;
+color: #222;
+
+animation: opac .4s;
+}
+
+@keyframes opac{ /* плавная анимация любого элемента (выпадающее меню*/
+    from{
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+footer{
+    text-align: center;
+    margin-top: 30px;
+}

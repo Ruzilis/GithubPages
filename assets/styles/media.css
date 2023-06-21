@@ -1,0 +1,14 @@
+
+/* Адаптация дизайна под разные размеры экрана */
+
+@media screen and (max-width: 768px) {
+    main > .info > h1 {
+        font-size: 30px;
+    }
+
+    header > nav > ul > li > a {
+        font-size: 10px;
+    }
+
+
+}

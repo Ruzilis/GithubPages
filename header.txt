@@ -1,5 +1,6 @@
 
 
+
 Changes from master branch
 New changes for master header
 New changes for demonstration of Rebase method.
@@ -8,3 +9,8 @@ Some text - Text from master
 WTF Text
 
 Changes from master branch
+
+Changes from master branch
+New changes for master header
+New changes for demonstration of Rebase method.
+fffff
